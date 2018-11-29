@@ -1,0 +1,56 @@
+---
+#-----------------------------------------------------------------------------#
+
+#                                                      .o8  
+#                                                      "888  
+#                 ooo. .oo.    .ooooo.   .oooo.    .oooo888  
+#                 `888P"Y88b  d88' `88b `P  )88b  d88' `888  
+#                  888   888  888ooo888  .oP"888  888   888  
+#                  888   888  888    .o d8(  888  888   888  
+#                 o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" 
+
+#-----------------------------------------------------------------------------#
+# Application configuration 
+#-----------------------------------------------------------------------------#
+
+url: 'http://localhost'
+listenPort: 80
+
+# Weather configuration ------------------------------------------------------#
+
+# The weather function is designed to work with the UK Met Office API
+
+# Endpoint to pull the weather data from 
+weatherUrl: 'http://datapoint.metoffice.gov.uk/public/data/val/wxobs/all/'
+
+# Data format you are expecting? 
+weatherFormat: 'json'
+
+# Which location ID should I fetch data for? 
+weatherLocation: '3772'
+
+# API key
+weatherApiKey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+# Transport configuration ----------------------------------------------------#
+
+###### CONVERT THIS TO +++ BROKEN STRING
+# TFL tube status URL, change district to another if you want another line
+tflLineStatusURL: 'https://api.tfl.gov.uk/Line/district/Status?detail=False&app_id=XXXXXX&app_key=XXXXXXXXXXXXXXXXXXXX'                  
+
+# TFL bus data URL
+tflBusStatusURL: 'https://api.tfl.gov.uk/StopPoint/'
+
+# TFL app config
+tflAppID: 'XXXXXXXXXXX'
+tflAppKey: 'XXXXXXXXXXXXXXXXXXXXXX'
+
+#-----------------------------------------------------------------------------#
+# Openshift configuration 
+#-----------------------------------------------------------------------------#
+
+openshiftDomain: 'your.openshift.domain'
+openshiftLocationPath: 'location'
+openshiftCoffeeStatus: 'coffee/status'
+
+# image directory etc. 

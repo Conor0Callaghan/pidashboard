@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nead test</title>
+  <style type="text/css">
+    @import url('static/css/test.css');
+    @import url('static/css/weather-icons.css');
+    @import url('static/css/weather-wind.css');
+  </style>
+</head>
+
+<body>
+
+<meta http-equiv="refresh" content="60; url='/wallpaper1'">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+<div class="wrapper">
+
+  <div class="left">
+
+    <div class="weather">
+  
+      <span class="weatherheader">Weather</span>
+      <br>
+      <center>
+        <span class="bigtemp"><i class='{{ weathericon }}'></i> {{ temp }}</span>
+      </center>
+      <span class="weathertext">
+        <br>{{ forecast }} 
+      </span>
+  
+    </div>
+
+    <div class="travel">
+      
+      <span class="travelheader">Travel</span> 
+
+      <br><br>
+
+      <span class="buses">
+      <span class="busname">39 to Pty:</span> {{ bus39pty }}
+      <br>
+      <span class="busname">93 to Pty:</span> {{ bus93pty }}
+      <br>
+      <span class="busname">93 to Wim:</span> {{ bus93wim }}
+      <br>
+      <span class="busname">39 to Clp:</span> {{ bus39clp }}
+      <br>
+      {% if tubeStatus == "Good Service" %}
+        <span class="districtline">District Line {{ tubeStatus }}</span>
+      {% else %}
+        <span class="districtlineerror">District Line {{ tubeStatus }}</span>
+      {% endif %}
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="right">
+
+    <div class="papi">
+
+      <span class="papiheader">Papi status</span>
+      <span class="papitext"> 
+      <br>
+      <br>Coffee: {{ coffeedata }}
+      <br>Location: {{ location }}
+      <br>
+      </span>
+      </span>
+
+    </div>
+
+    <div class="headlines">
+      <span class="headlinesheader">News headlines</span>
+      <span class="headlinestext">
+      <br><br>
+                 {{ headlines|safe }}
+      </span>
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+
+</html>

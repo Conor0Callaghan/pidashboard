@@ -1,0 +1,152 @@
+/* Test
+ *
+ *
+ */
+
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background: #e9eef1;
+}
+
+div.left {
+  float: left;
+  width: 49%;
+  margin-left: 10px;
+}
+
+div.right {
+  float: left;
+  width: 49%;
+}
+
+div.wrapper {
+  margin: 0 auto;
+  width: 800px;
+}
+
+div.clear {
+  clear: both;
+}
+
+div.weather {
+
+  padding: 10px;
+  background: white;
+
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+div.travel {
+
+  padding: 10px;
+  background: white;
+
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.headlines {
+
+  padding: 10px;
+  background: white;
+  color: #9c89b8;
+
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.papi {
+
+  padding: 10px;
+  background: white;
+  color: #ffac00;
+
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+span.bigtemp {
+  font-size: 4em;
+  color: #0aa0d9;
+}
+
+span.weathertext {
+  font-size: 1.3em;
+  color: #0aa0d9;
+  text-align: 'justify';
+}
+
+span.headlinestext {
+  font-size: 1.3em;
+}
+
+span.papitext {
+  font-size: 1.3em;
+}
+
+span.districtline {
+  color: #7ABA7A;
+}
+
+span.districtlineerror {
+  color: #ff0000;
+}
+
+span.buses {
+  font-size: 1.3em;
+}
+
+span.busname {
+  font-size: 1em;
+  color: #7ABA7A;
+  font-weight: 'bold';
+} 
+
+div.bottom {
+  background-color: #02d0ac;
+  color: white;
+  padding: 5px;
+}
+
+span.cups {
+  font-size: 2em;
+}
+
+span.papi {
+  font-size: 1.3em;
+  margin: 5px;
+}
+
+span.weatherheader {
+  color: #0aa0d9;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+span.headlinesheader { 
+  color: #9c89b8;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+span.travelheader { 
+  color: #7ABA7A;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+span.papiheader {
+  color: #ffac00;
+  font-size: 1.6em;
+  font-weight: bold;
+}
